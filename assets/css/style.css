@@ -38,6 +38,7 @@ a {
 }
 ul {
     list-style: none;
+    padding-left: 0;
 }
 img {
     width: 100%;
@@ -75,6 +76,11 @@ header a::before {
 header a:hover::before {
   transform: scaleX(1);
 }
+.top-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 /*==================================*/
 /*========== Hero Style ==========*/
 /*==================================*/
@@ -92,7 +98,7 @@ header a:hover::before {
     border-color: var(--primary-color);    
 }
 .hero {
-    height: 92vh;
+    height: 92vh;    
 }
 .hero h1 {
     font-size: 4rem;
@@ -104,4 +110,46 @@ header a:hover::before {
 .hero p {
     margin-right: 4rem;
 }
+/* Spining circle */
+.spinning {
+    position: relative;
+}
+.circle-1 {    
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 12px dotted rgba(5, 187, 117, .7);
+    border-spacing: 20px;
+    box-sizing: border-box;
+    font-weight: 500; 
+    /* z-index: -1;    */
+    animation: spinning 225s linear;
+}
 
+@keyframes spinning {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/*==================================*/
+/*========== Info Section ==========*/
+/*==================================*/
+#info i {    
+    font-size: 20px;    
+}
+#info i:hover {
+    color: var(--primary-color);
+    transition: var(--transition);    
+}
+#info li span:last-child {
+    padding-top: 5px;
+}
+#info i {
+    display: inline-block;    
+}
+#info .heading-top {
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    font-family: var(--font-medium);
+    text-transform: uppercase;
+}
