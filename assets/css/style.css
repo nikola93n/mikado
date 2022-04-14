@@ -140,9 +140,12 @@ header a:hover::before {
 #info i {    
     font-size: 20px;    
 }
-#info i:hover {
+#info li:hover i {
     color: var(--primary-color);
     transition: var(--transition);    
+}
+#info li:not(:last-child) {
+    margin-bottom: 20px;
 }
 #info li span:last-child {
     padding-top: 5px;
@@ -158,4 +161,46 @@ header a:hover::before {
 }
 #info h2 {
     font-family: var(--font-medium);
+}
+/*==================================*/
+/*========== Counter Awards Section ==========*/
+/*==================================*/
+#awards {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;     
+}
+#awards .row {
+    min-height: 400px;
+}
+ #awards i {
+    font-size: 60px;
+}
+#awards .number {
+    font-size: 40px;
+    font-family: var(--font-medium);
+    padding: 15px 0;
+}
+#awards .text {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--font-extrabold);    
+    text-align: center;
+}
+#awards .col-md-3:hover i {
+    color: var(--primary-color);
+    transition: var(--transition);    
+}
+#awards .col-md-3:hover .text {
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+@media (max-width: 767px) {
+    #awards {    
+        background-size: cover;   
+        padding: 50px 0;      
+    }
+    #awards .col-md-3:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
