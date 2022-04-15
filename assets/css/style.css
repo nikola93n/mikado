@@ -43,6 +43,9 @@ ul {
 img {
     width: 100%;
 }
+.py-75 {
+    padding: 7.5rem 0;
+}
 /*==================================*/
 /*========== Header Style ==========*/
 /*==================================*/
@@ -153,14 +156,17 @@ header a:hover::before {
 #info i {
     display: inline-block;    
 }
-#info .heading-top {
+#info .heading-top,
+#team .heading-top {
     letter-spacing: 1px;
     color: var(--primary-color);
     font-family: var(--font-medium);
     text-transform: uppercase;
 }
-#info h2 {
+#info h2,
+#team h2 {
     font-family: var(--font-medium);
+    font-size: 3rem;
 }
 /*==================================*/
 /*========== Counter Awards Section ==========*/
@@ -204,3 +210,36 @@ header a:hover::before {
         margin-bottom: 30px;
     }
 }
+/*==================================*/
+/*========== Team Section ==========*/
+/*==================================*/
+#team .progress {
+    height: .5rem;
+}
+#team .progress-bar {
+    background-color: var(--primary-color);    
+}
+#team .progress-item h6 {
+    font-family: var(--font-medium);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;    
+}
+#team .progress .progress-bar {
+   animation: animate-bar 2s;
+}
+@-webkit-keyframes animate-positiv {
+    0% {
+        width: 0%;
+    }
+}
+@keyframes animate-bar {
+    0% {
+        width: 0%;
+    }
+}
+/* }
+.animation {
+    animation: animate-bar 2s;
+} */
