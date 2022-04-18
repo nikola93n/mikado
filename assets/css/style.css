@@ -14,6 +14,7 @@
 :root {
   --primary-color: #05bb75;  
   --secondary-color: #222D50;
+  --accent-color: #FAC641;
   --dark: #333333;
   --white: #ffffff;    
   --font-light: "Nunito Light";
@@ -45,6 +46,10 @@ img {
 }
 .py-75 {
     padding: 7.5rem 0;
+}
+h2 {
+    font-family: var(--font-medium);
+    font-size: 3rem;
 }
 /*==================================*/
 /*========== Header Style ==========*/
@@ -156,18 +161,13 @@ header a:hover::before {
 #info i {
     display: inline-block;    
 }
-#info .heading-top,
-#team .heading-top {
+.heading-top {
     letter-spacing: 1px;
     color: var(--primary-color);
     font-family: var(--font-medium);
     text-transform: uppercase;
 }
-#info h2,
-#team h2 {
-    font-family: var(--font-medium);
-    font-size: 3rem;
-}
+   
 /*==================================*/
 /*========== Counter Awards Section ==========*/
 /*==================================*/
@@ -218,6 +218,7 @@ header a:hover::before {
 }
 #team .progress-bar {
     background-color: var(--primary-color);    
+    width: 0%;
 }
 #team .progress-item h6 {
     font-family: var(--font-medium);
@@ -226,10 +227,11 @@ header a:hover::before {
     letter-spacing: 1px;
     margin-top: 1.5rem;    
 }
-#team .progress .progress-bar {
+/* #team .progress .progress-bar {
    animation: animate-bar 2s;
-}
-@-webkit-keyframes animate-positiv {
+} */
+
+@-webkit-keyframes animate-bar {
     0% {
         width: 0%;
     }
@@ -239,7 +241,77 @@ header a:hover::before {
         width: 0%;
     }
 }
-/* }
 .animation {
     animation: animate-bar 2s;
-} */
+}
+/* Team People */
+.team-card {
+    position: relative;
+}
+.team-detail {   
+   max-width: 250px;
+   margin: -70px auto 0 auto;  
+}
+.team-detail h5,
+.team-detail p {
+   background: var(--white);
+   position: relative; 
+   margin-bottom: 0px;          
+}
+.team-detail h5 {
+   padding: 10px 0 2px 0;  
+   font-weight: bold;  
+}
+.team-detail p {
+   padding-bottom: 10px;    
+}
+.team-detail ul {
+    background: var(--accent-color);
+    padding: 20px 0;
+}
+.team-detail ul li:not(:last-child) {
+    margin-right: 20px;
+}
+.team-detail ul li i {
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    padding: 5px 9px 7px 9px;    
+    border-radius: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+.team-detail ul li i:hover {
+    background-color: var(--white);
+    border: 1px solid transparent;
+}
+@media (max-width: 992px) {
+    /* Center third card */
+#team .custom {  
+  margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    /* Center third card */
+#team .team-card {  
+  padding: 0 10%;
+    }
+}
+
+/*=============================================*/
+/*========== Partners Slider Section ==========*/
+/*=============================================*/
+#partners {
+    /* background: rgba(0, 0, 0, 0.05); */
+    background: rgba(245, 253, 250, 1);
+    background-image: url(../../images/pattern-grid.png);
+    padding: 7rem 4rem;
+}
+
+
+/*=============================================*/
+/*========== Portfolio Section ==========*/
+/*=============================================*/
+.mx-550 {
+    max-width: 550px;    
+    margin: 0 auto;
+}
