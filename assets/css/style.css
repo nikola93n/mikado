@@ -339,7 +339,7 @@ header a:hover::before {
     background-position: center 89.1375px;
 }
 #testimonials {
-    padding: 7.5rem 0;
+    padding: 5.5rem 0 !important;    
 }
 #testimonials .swiper-slide {
     background: var(--white);
@@ -360,4 +360,39 @@ header a:hover::before {
 #testimonials .rating p:first-child {
     font-family: var(--font-extrabold);
     font-size: 18px;
+}
+@media (max-width: 500px) {
+    #testimonials .client {
+        flex-direction: column;        
+    }
+    #testimonials .client .rating.ps-4 {
+        padding-left: 0 !important;
+    }
+}
+/*=============================================*/
+/*============ Blog Section Style =============*/
+/*=============================================*/
+#blog {
+    background: #F8F9FA;
+}
+#blog .meta {
+    color: var(--primary-color);
+}
+#blog h5 {
+    font-weight: bold;
+}
+#blog .author img {
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);    
+}
+#blog .card {
+    transition: var(--transition);
+    border-radius: 10px;
+}
+#blog .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: var(--transition);
+    cursor: pointer; 
+    transform: translateY(-5px);       
 }
