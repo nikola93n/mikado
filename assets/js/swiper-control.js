@@ -2,7 +2,7 @@
 var swiper = new Swiper(".mySwiper", {
         slidesPerView: 5,
         spaceBetween: 30,
-        centeredSlides: true,
+        // centeredSlides: true,
         mousewheel: {
             releaseOnEdges: true,
         },        
@@ -15,7 +15,12 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             //spaceBetween: 30,
             slidesPerGroup: 1,
-        },        
+        },    
+        500: {
+            slidesPerView: 2,
+            //spaceBetween: 30,
+            slidesPerGroup: 1,
+        },       
         768: {
             slidesPerView: 3,
             spaceBetween: 50,
