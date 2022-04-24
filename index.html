@@ -13,12 +13,12 @@
     <title>M!cado | Your ideas thriving with us</title>
 </head>
 <body>
-    <div class="top-container" id="home" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="top-container" style="background-color: rgba(0, 0, 0, 0.05);">
         <!-- Start Header Section -->
         <div class="container">
             <div class="row">                   
                 <header class="mt-4 d-flex justify-content-between align-items-center">
-                    <a href="#" class="logo"
+                    <a href="https://mikado.nnweb.net" class="logo" id="home"
                       ><img src="images/Mikado-Logo.jpg" alt="Mikado Logo" class="logo"
                     /></a>
                     <nav class="hide-nav" id="navbar">
@@ -282,7 +282,7 @@
             </div>  
             <div class="row mb-5 mt-4 button-group filter-button-group">
                 <div class="col d-flex justify-content-center flex-wrap">
-                    <button type="button" data-filter="*" class="mx-3">All</button>
+                    <button type="button" data-filter="*" class="mx-3" id="automatic-click">All</button>
                     <button type="button" data-filter=".graphic-design" class="mx-3">Graphic Design</button>
                     <button type="button" data-filter=".web-design" class="mx-3">Web Design</button>
                     <button type="button" data-filter=".seo" class="mx-3">Seo</button>
@@ -290,10 +290,10 @@
                 </div>
             </div>           
 
-            <div class="row justify-content-center g-0" id="product-list">
+            <div class="row justify-content-center g-0" id="portfolio-list">
                 <div class="col-lg-4 col-md-6 graphic-design grid-item">
                     <figure class="product-item">
-                        <img src="images/portfolio/1.jpg" alt="">
+                        <img src="images/portfolio/1.jpg" alt="" class="img-fluid">
                         <figcaption class="fig-caption">
                             <i class="bi bi-search"></i>
                             <h5 class="title mt-1">Project Name</h5>
@@ -303,7 +303,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 graphic-design grid-item">
                     <figure class="product-item">
-                        <img src="images/portfolio/2.jpg" alt="">
+                        <img src="images/portfolio/2.jpg" alt="" class="img-fluid">
                         <figcaption class="fig-caption">
                             <i class="bi bi-search"></i>
                             <h5 class="title mt-1">Project Name</h5>
@@ -313,7 +313,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 web-design grid-item">
                     <figure class="product-item">
-                        <img src="images/portfolio/3.jpg" alt="">
+                        <img src="images/portfolio/3.jpg" alt="" class="img-fluid">
                         <figcaption class="fig-caption">
                             <i class="bi bi-search"></i>
                             <h5 class="title mt-1">Project Name</h5>
@@ -323,7 +323,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 seo grid-item">
                     <figure class="product-item">
-                        <img src="images/portfolio/4.jpg" alt="">
+                        <img src="images/portfolio/4.jpg" alt="" class="img-fluid">
                         <figcaption class="fig-caption">
                             <i class="bi bi-search"></i>
                             <h5 class="title mt-1">Project Name</h5>
@@ -333,7 +333,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 instagram-management grid-item">
                     <figure class="product-item">
-                        <img src="images/portfolio/5.jpg" alt="">
+                        <img src="images/portfolio/5.jpg" alt="" class="img-fluid">
                         <figcaption class="fig-caption">
                             <i class="bi bi-search"></i>
                             <h5 class="title mt-1">Project Name</h5>
@@ -343,7 +343,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 graphic-design grid-item">
                     <figure class="product-item">
-                        <img src="images/portfolio/6.jpg" alt="">
+                        <img src="images/portfolio/6.jpg" alt="" class="img-fluid">
                         <figcaption class="fig-caption">
                             <i class="bi bi-search"></i>
                             <h5 class="title mt-1">Project Name</h5>
@@ -353,7 +353,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 seo grid-item">
                     <figure class="product-item">
-                        <img src="images/portfolio/7.jpg" alt="">
+                        <img src="images/portfolio/7.jpg" alt="" class="img-fluid">
                         <figcaption class="fig-caption">
                             <i class="bi bi-search"></i>
                             <h5 class="title mt-1">Project Name</h5>
@@ -559,6 +559,8 @@
             </div>
         </div>
     </footer>
+    <!-- Scroll to Top -->
+    <button id="scrollToTop"><a href="#home"><i class="bi bi-arrow-up"></i></a></button>
     <!-- End Footer Section -->
 
 
@@ -581,14 +583,15 @@
     <script src="assets/js/swiper-control.js"></script>
     <!-- jQuery -->
     <script src="vendors/js/jquery.min.js"></script>   
+    <script src="assets/js/back-to-top.js"></script>
+    <!-- Loading images for Isotope -->
+    <script src="vendors/js/images-Loaded.js"></script>
     <!-- Isotope portfolio -->
     <script src="vendors/js/isotope.min.js"></script>  
     <!-- Start scrollbar animation and Isotope -->
-    <script src="assets/js/start-scrollbar-animation.js"></script>   
-    
+    <script src="assets/js/start-scrollbar-animation.js"></script> 
+    <script src="assets/js/isotope-control.js"></script>
+   
+        
 </body>
 </html>
-
-<style>
-   
-</style>
