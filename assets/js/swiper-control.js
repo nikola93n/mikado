@@ -6,6 +6,7 @@ var swiper = new Swiper(".mySwiper", {
         mousewheel: {
             releaseOnEdges: true,
         },        
+        // loop: true,
         speed: 1000,
         autoplay: {
         delay: 2000,
