@@ -737,3 +737,25 @@ figure:hover figcaption {
   transition: 0.6s;
   opacity: 1;
 }
+
+/*============================================*/
+/*========== Project Single Section ==========*/
+/*============================================*/
+.single-project .meta p {
+    margin-bottom: 0.2rem;
+}
+.related-swiper .swiper-slide a,
+.related-projects-wrapper a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+.related-swiper .swiper-slide a:hover,
+.related-projects-wrapper a:hover  {
+    color: var(--secondary-color);
+}
+.related-swiper .swiper-slide a i {
+    transition: var(--transition);
+}
+.related-swiper .swiper-slide a:hover i {
+    padding-left: 10px;    
+}

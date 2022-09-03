@@ -68,3 +68,40 @@ var swiper = new Swiper(".swiper-testimonials", {
     
 // },   
 });
+//Related Projects
+var swiper = new Swiper(".related-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },   
+    speed: 1000,
+    autoplay: {
+    delay: 2000,
+    },
+     breakpoints: {
+    320: {
+        slidesPerView: 1,
+        //spaceBetween: 30,
+        slidesPerGroup: 1,
+    },    
+    500: {
+        slidesPerView: 2,
+        //spaceBetween: 30,
+        slidesPerGroup: 1,
+    },       
+    768: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 1,
+    },
+    992: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        slidesPerGroup: 1,
+    },    
+    
+},   
+});
